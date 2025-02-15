@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoe Brand Analysis - Storytelling</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Shoe Brand Analysis</h1>
+    <p class="pi">Exploring consumer preferences and spending patterns on shoe brands.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#data-collection">Data Collection</a></li>
+      <li><a href="#data-cleaning">Data Cleaning</a></li>
+      <li><a href="#data-exploration">Data Exploration</a></li>
+      <li><a href="#data-modeling">Data Modeling</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+  </nav>
+
+  <section id="introduction">
+    <h2> What’s the Story About?</h2>
+    <p>
+      This dataset is a collection of information about shoe buyers. It tells us about the brands they use, their favorite brands, how much they’ve spent on shoes, and even their shoe sizes. Think of it as a sneak peek into the world of shoe lovers—what they buy, what they love, and how much they’re willing to spend.
+    </p>
+  </section>
+
+  <section id="data-collection">
+    <h2> Where Did This Data Come From?</h2>
+    <p>
+      The data was gathered through a survey of shoe buyers. People shared their preferences, spending habits, and even their shoe sizes. It’s like asking a group of friends about their favorite shoes and how much they’ve spent on them. This dataset is a snapshot of their answers.
+    </p>
+  </section>
+
+  <section id="data-cleaning">
+    <h2> Was the Data Perfect?</h2>
+    <p>
+      Not quite! Like any good story, the data needed some editing. We cleaned it up by removing missing values, fixing inconsistencies, and making sure everything was standardized. Imagine tidying up a messy room before you can start working—that’s what we did with the data.
+    </p>
+  </section>
+
+  <section id="data-exploration">
+    <h2> What Did We Find?</h2>
+    
+    <p>
+      Actually, there were plenty of interesting findings! Let’s dive into a few:
+    </p>
+
+    <div class="visualization">
+      <h3>Total Cost Spent</h3>
+      <p>In the bustling world of shoe buyers, there’s a wide range of spending habits. Some people are frugal, while others are willing to splurge on their favorite pairs. The distribution of Total Cost Spent tells us a story about how much people are willing to invest in their footwear.
+
+      </p>
+      <p>
+        Some people spent as little as 500 rupees, while others went all out, spending over 5,000 rupees on shoes! The distribution shows that most people spent between 1,000 to 3,000 rupees.This range is the sweet spot, where most buyers feel comfortable investing in quality footwear without breaking the bank.
+      </p>
+      <img src="images/total_cost_spent_distribution.png" alt="Total Cost Spent Distribution">
+    </div>
+
+    <div class="visualization">
+      <h3>Shoe Sizes</h3>
+      <p>In the world of shoe buyers, size matters. The distribution of Shoe Sizes tells us a story about the diversity of foot sizes and the preferences of shoe buyers. From the smallest to the largest, every size has its place in the market.</p>
+      <p>
+        Shoe sizes ranged from 7 to 13, with size 9 being the most common. It seems like size 9 is the sweet spot for shoe buyers!
+      </p>
+      <p>Sizes 8 to 12 are the most common, covering the majority of shoe buyers. This range represents the average foot sizes for most adults</p>
+      <img src="images/shoe_size_distribution.png" alt="Shoe Size Distribution">
+    </div>
+
+    <div class="visualization">
+      <h3>Brand Preferences</h3>
+      <p>
+        In the bustling world of shoe buyers, there’s a wide array of brands to choose from. Some people stick to their tried-and-true favorites, while others love to experiment with new brands.</p> <p> Let’s dive into the data to uncover the stories behind these choices .When it comes to brands, <strong>Puma</strong> and <strong>Under Armour</strong> were the most popular among the respondents. But when we asked about their favorite brands, <strong>Asics</strong> and <strong>New Balance</strong> took the lead. It seems like people love trying different brands but have a soft spot for a few favorites.
+      </p>
+      <img src="images/brand_using_distribution.png" alt="Brand Using Distribution">
+      <img src="images/favorite_brand_distribution.png" alt="Favorite Brand Distribution">
+      <p>
+        People love <strong>Asics</strong> but often buy <strong>Puma</strong> or <strong>Nike</strong> due to accessibility or affordability.
+      </p>
+      <p>
+        <strong>New Balance</strong> and <strong>Under Armour</strong> strike a balance, being both loved and used.
+      </p>
+    </div>
+
+    
+  </section>
+
+  <section id="data-modeling">
+    <h2> Can We Predict Spending?</h2>
+    <p>
+      Yes! We used regression analysis to see if we could predict total spending based on shoe size. The results showed a weak positive relationship, meaning that while shoe size does play a small role in spending, there are likely other factors at play too. It’s like saying taller people might spend more on shoes, but it’s not the whole story.
+    </p>
+    <div class="visualization">
+      <h3>Correlation Between Spending and Shoe Size</h3>
+      <p>
+        We found a weak positive correlation between total cost spent and shoe size. This means that people with larger shoe sizes tend to spend a bit more on shoes. Maybe bigger shoes cost more, or perhaps they just love shoes more!
+      </p>
+      <img src="images/correlation_heatmap.png" alt="Correlation Heatmap">
+    </div>
+  </section>
+
+  <section id="conclusion">
+    <h2> What’s the Takeaway?</h2>
+    <p>
+      We learned that shoe buyers are a diverse group with varied preferences and spending habits.Sizes 8 to 12 are the most common, covering the majority of shoe buyers. most people are willing to spent between 1,000 to 3,000 rupees. Some love <strong>Under Armour</strong>, while others swear by <strong>New Balance</strong> or <strong>Asics</strong>. Shoe size does play a small role in spending, but it’s not the only factor. At the end of the day, it’s all about personal preference—what feels good, what looks good, and what makes you happy.
+    </p>
+  </section>
+
+  <footer>
+    <p>Explore the full analysis on <a href="https://github.com/yourusername/shoe_brand_analysis" target="_blank">GitHub</a>.</p>
+  </footer>
+</body>
+</html>
